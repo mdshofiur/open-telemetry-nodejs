@@ -62,6 +62,9 @@ app.get('/run_test', async (req, res) => {
 });
 app.use('/cats', authMiddleware, getCrudController());
 
+
+
+
 app.listen(PORT, () => {
    console.log(`Listening on http://localhost:${PORT}`);
 });
