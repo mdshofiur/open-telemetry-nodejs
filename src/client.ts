@@ -5,7 +5,7 @@ const tracer = setupTracing('example-express-client');
 
 import * as api from '@opentelemetry/api';
 import { default as axios } from 'axios';
-import { setupTracing } from './tracer';
+import { setupTracing } from './tracing.jaeger';
 
 function makeRequest() {
    const span = tracer.startSpan('client.makeRequest()', {
